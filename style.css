@@ -195,7 +195,7 @@ a.pure-button-primary {
 
 .splash-container {
   background: #ffffff;
-  background-image: url("https://kyleliao.tech/images/kyle.jpg");
+  background-image: url("/static/Untitled.jpeg");
   background-position: center;
   background-repeat: repeat-x;
   z-index: 1;
