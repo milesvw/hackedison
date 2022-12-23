@@ -1,194 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>HackEdison Hackathon</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik&display=swap"
       rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
-      integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls"
-      crossorigin="anonymous" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css" />
-    <link
-      rel="stylesheet"
-      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>HackEdison Hackathon</title>
   </head>
   <body>
-    <div id="fadein"></div>
-    <!--Connects to CSS for fade in and JS at bottom of file for fade in effect upon refresh-->
-    <div class="header">
-      <!--Container for NavBar-->
-      <div
-        class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed pure-menu-scrollable">
-        <!--Class in PureCSS for menu-->
-        <a class="pure-menu-heading" href="/index.html">hack<i>Edison</i></a>
-        <!--Class in PureCSS for Left Align set in style.css-->
-        <ul class="pure-menu-list">
-          <li class="pure-menu-item">
-            <a href="/about.html" class="pure-menu-link">About</a>
-          </li>
-          <li class="pure-menu-item">
-            <a href="/faq.html" class="pure-menu-link">FAQ</a>
-          </li>
-          <li class="pure-menu-item">
-            <a href="https://forms.gle/VfncN46n7oKyLWcb8" class="pure-menu-link"
-              >Register</a
-            >
-          </li>
+    <header>
+      <nav>
+        <a href="/" class="nav-heading">HACK<i>EDISON</i></a>
+        <ul class="nav-menu">
+          <li><a href="#" class="nav-link">About</a></li>
+          <li><a href="#" class="nav-link">FAQ</a></li>
+          <li><a href="#" class="nav-link">Register</a></li>
         </ul>
-      </div>
-    </div>
+        <div class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </nav>
 
-    <div class="splash-container">
-      <!--Container for the image on home page-->
-      <div class="splash">
-        <h1 class="splash-head">hack<i>Edison</i></h1>
-        <p class="splash-subhead">A NYC High School Hackathon at TAEHS.</p>
-        <p class="splash-subhead">Sunday February 5, 8AM-8PM.</p>
-        <p>
-          <a
-            href="https://forms.gle/VfncN46n7oKyLWcb8"
-            class="pure-button pure-button-primary"
-            >Sign Up!</a
-          >
+      <div class="basic-info">
+        <h1>HACK<i>EDISON</i></h1>
+        <p class="subheading">
+          A hackathon hosted at Thomas Edison High School in Queens, NYC
         </p>
+        <p class="subheading">Sunday February 5th, 8am-8pm</p>
+        <a href="#" class="register-button">Register</a>
       </div>
-    </div>
-
-    <div class="content-wrapper">
-      <!--wrapper for all content on home page-->
-      <div class="content">
-        <!--Smaller sub container wrapper for a section-->
-        <h2 class="content-head is-center">Key Info</h2>
-        <!--Centering class for header custom-->
-        <div class="pure-g">
-          <!--Start of a PureCSS grid-->
-          <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-            <!--Example of PureCSS gridding. different fractions for different breakpoints.-->
-            <h3 class="content-subhead">
-              <i class="fa fa-map-marker"></i>Location
-            </h3>
-            <p class="center">
-              We will be at Thomas A. Edison CTE HS's Cafeteria at 165-65 84th
-              Avenue, Jamaica, New York 11432.
-            </p>
-          </div>
-          <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-            <h3 class="content-subhead">
-              <i class="fa fa-calendar-check-o"></i>Date
-            </h3>
-            <p class="center">February 5th. Save the Date!</p>
-          </div>
-          <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-            <h3 class="content-subhead"><i class="fa fa-clock-o"></i>Time</h3>
-            <p class="center">
-              The hackathon will run for 12 hours from 8 am to 8 pm.
-            </p>
-          </div>
-          <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-            <h3 class="content-subhead">
-              <i class="fa fa-check-square-o"></i>NYC High School Students ONLY*
-            </h3>
-            <p class="center">
-              All High School students who attend a NYC high school can attend
-              the event.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!--End of the smaller sub container wrapper for the key info section-->
-
-      <div class="sponsors">
-        <div class="content">
-          <h2 class="content-head is-center">Sponsors</h2>
-          <div class="sponsor-center">
-            <div class="l-box pure-u-1 pure-md-1-2 pure-u-lg-1-4">
-              <a href="https://google.com"
-                ><img class="sponsor-img" src="https://via.placeholder.com/150"
-              /></a>
-            </div>
-            <div class="l-box pure-u-1 pure-md-1-2 pure-u-lg-1-4">
-              <a href="https://google.com"
-                ><img class="sponsor-img" src="https://via.placeholder.com/150"
-              /></a>
-            </div>
-            <div class="l-box pure-u-1 pure-md-1-2 pure-u-lg-1-4">
-              <a href="https://google.com"
-                ><img class="sponsor-img" src="https://via.placeholder.com/150"
-              /></a>
-            </div>
-            <div class="l-box pure-u-1 pure-md-1-2 pure-u-lg-1-4">
-              <a href="https://google.com"
-                ><img class="sponsor-img" src="https://via.placeholder.com/150"
-              /></a>
-            </div>
-            <div class="l-box pure-u-1 pure-md-1-2 pure-u-lg-1-4">
-              <a href="https://google.com"
-                ><img class="sponsor-img" src="https://via.placeholder.com/150"
-              /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="content">
-        <h2 class="content-head is-center">Questions?</h2>
-        <div class="pure-g">
-          <div class="l-box-lrg pure-u-1 pure-u-md-2-6 pure-u-lg-1-2">
-            <iframe
-              class="map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.079087610562!2d-73.80088252329539!3d40.7162754373529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c260e39a3ae4f5%3A0x890dc9978078e270!2sThomas%20A.%20Edison%20Career%20and%20Technical%20Education%20High%20School!5e0!3m2!1sen!2sus!4v1668872367736!5m2!1sen!2sus"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-          <div class="l-box-lrg pure-u-1 pure-u-md-4-6 pure-u-lg-1-2">
-            <h4>Contact Us</h4>
-            <p>Operations: kyle@edisonhack.club</p>
-            <p>Treasurer: jayson@edisonhack.club</p>
-            <p>Engineer: sahib@edisonhack.club</p>
-            <h4>More Information</h4>
-            <p>
-              For additional information, refer to our
-              instagram(hack_club_edison)
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer l-box is-center">
-        <p>
-          hackEdison is fiscally sponsored by Hack Club Bank, a project by The
-          Hack Foundation (d.b.a. Hack Club), a 501(c)(3) nonprofit (EIN:
-          81-2908499).
-        </p>
-
-        <a href="https://bank.hackclub.com/hack-edison"
-          ><img
-            class="sponsor-img"
-            src="https://bank.hackclub.com/brand/hcb-logo-original-light.svg"
-        /></a>
-      </div>
-    </div>
-
-    <script type="text/javascript">
-      window.onload = function () {
-        setTimeout(function () {
-          document.getElementById("fadein").remove();
-        }, 1000);
-      };
-    </script>
+    </header>
   </body>
 </html>
