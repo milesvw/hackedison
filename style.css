@@ -35,7 +35,7 @@ header nav .nav-link:hover {
   color: #c65cee;
 }
 header nav .hamburger {
-  display: none;
+  /* display: none; */
   cursor: pointer;
 }
 header nav .hamburger .bar {
@@ -51,7 +51,7 @@ header .basic-info {
   display: grid;
   place-items: center;
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   header nav .hamburger {
     display: block;
   }
@@ -81,4 +81,4 @@ header .basic-info {
   .nav-menu.active {
     left: 0;
   }
-}
+} */
