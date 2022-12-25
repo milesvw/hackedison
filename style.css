@@ -11,6 +11,8 @@ header nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
+  width: 100%;
+  position: fixed !important;
 }
 header nav .nav-heading {
   font-size: 2.5rem;
@@ -35,7 +37,7 @@ header nav .nav-link:hover {
   color: #c65cee;
 }
 header nav .hamburger {
-  /* display: none; */
+  display: none;
   cursor: pointer;
 }
 header nav .hamburger .bar {
@@ -50,8 +52,29 @@ header nav .hamburger .bar {
 header .basic-info {
   display: grid;
   place-items: center;
+  background-image: url(static/peopleworking.jpeg);
+  padding-top: 14em;
+  background-position: center;
+  background-repeat: repeat-x;
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 15em;
 }
-/* @media (max-width: 768px) {
+header .basic-info .title {
+  font-size: 4rem;
+  color: #c65cee;
+}
+header .basic-info .subheading {
+  color: white;
+}
+header .basic-info .register-button {
+  font-size: 32px;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 3px;
+  background-color: #f6c443;
+}
+@media (max-width: 768px) {
   header nav .hamburger {
     display: block;
   }
@@ -81,4 +104,4 @@ header .basic-info {
   .nav-menu.active {
     left: 0;
   }
-} */
+}
